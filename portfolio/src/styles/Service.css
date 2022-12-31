@@ -1,0 +1,147 @@
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem 2rem;
+  justify-content: center;
+  max-height: inherit;
+}
+.service-col {
+  background: var(--color-bg-variant);
+  padding-top: 0;
+  border-radius: 0 0 1rem 1rem;
+  height: fit-content;
+  border: 1px solid var(--color-bg-variant);
+  max-height: 75vh;
+  overflow: hidden;
+}
+.scroll {
+  height: 65vh;
+  max-height: 70vh;
+  overflow: scroll;
+}
+.service-col:hover {
+  background: transparent;
+  transition: var(--transition);
+}
+.service-title {
+  position: sticky;
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+.txt-black {
+  color: black;
+}
+.service-detail {
+  margin: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  font-size: smaller;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service-detail p {
+  max-width: 23rem;
+  margin-left: 1rem;
+}
+.service-detail svg {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 10rem;
+  }
+  .service-grid {
+    display: block;
+    flex-direction: column;
+  }
+  .service-col {
+    display: none;
+    transition: var(--transition);
+  }
+  #active {
+    display: block;
+  }
+
+  .service-detail {
+    margin: none;
+  }
+}
+/*.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem 2rem;
+  justify-content: center;
+  max-height: inherit;
+}
+.service-col {
+  background: var(--color-bg-variant);
+  padding-top: 0;
+  border-radius: 0 0 1rem 1rem;
+  height: fit-content;
+  border: 1px solid var(--color-bg-variant);
+  max-height: 75vh;
+  overflow: hidden;
+}
+.scroll {
+  height: 65vh;
+  max-height: 70vh;
+  overflow: scroll;
+}
+.service-col:hover {
+  background: transparent;
+  transition: var(--transition);
+}
+.service-title {
+  position: sticky;
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+.txt-black {
+  color: black;
+}
+.service-detail {
+  margin: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  font-size: smaller;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service-detail p {
+  max-width: 23rem;
+  margin-left: 1rem;
+}
+.service-detail svg {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 10rem;
+  }
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-col {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 350%;
+    z-index: 1;
+    animation: slideAnimation1 4s ease 0s forwards;
+  }
+  #active {
+    display: block;
+  }
+  .service-detail {
+    margin: none;
+  }
+}
+
+*/

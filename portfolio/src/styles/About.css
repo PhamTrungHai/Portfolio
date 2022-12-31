@@ -1,0 +1,118 @@
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-8 {
+  flex: 0 0 auto;
+  width: 50%;
+
+  display: grid;
+  place-items: center;
+}
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-box-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.about-box {
+  background: var(--color-bg-variant);
+  border-radius: 0.8rem;
+  width: 10rem;
+  height: 10rem;
+}
+.about-box-holder svg {
+  margin-top: 2rem;
+  color: var(--color-primary);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.about-box > h3,
+h5 {
+  margin-top: 0.4rem;
+}
+.self-intro h5 {
+  margin-top: 1rem;
+  text-align: left;
+}
+.btn-talk {
+  margin-top: 2rem;
+  float: left;
+}
+.about-pic {
+  background: linear-gradient(var(--color-primary), transparent);
+  position: absolute;
+  width: 22rem;
+  height: inherit;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-pic img {
+  border-radius: 2rem;
+  transform: rotate(15deg);
+  transition: var(--transition);
+}
+.about-pic:hover img {
+  transform: rotate(360deg);
+  transition: var(--transition);
+}
+@media screen and (max-width: 1024px) {
+  .about-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .col-sm-8 {
+    width: 100%;
+    margin: 2rem auto 4rem;
+  }
+  .self-intro h5 {
+    margin: 1rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-row {
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: 1;
+  }
+  .col-sm-8 {
+    width: 100%;
+    gap: 1rem;
+  }
+  .col-sm-4 {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about-pic {
+    position: relative;
+  }
+  .about-box-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .self-intro {
+    text-align: center;
+  }
+  .vstack {
+    display: contents;
+  }
+  .btn-talk {
+    margin-top: 0.1rem;
+  }
+  .self-intro h5 {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhamTrungHai/Portfolio.git"
+  },
+  "author": "Hi Fam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhamTrungHai/Portfolio/issues"
+  },
+  "homepage": "https://github.com/PhamTrungHai/Portfolio#readme",
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "install": "^0.13.0",
+    "npm": "^9.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.1"
+  }
+}
