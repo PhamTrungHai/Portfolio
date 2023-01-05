@@ -32,7 +32,7 @@
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   display: flex;
-  align-content: end;
+  align-content: flex-end;
   width: 22rem;
   height: 30rem;
   position: absolute;

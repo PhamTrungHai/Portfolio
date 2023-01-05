@@ -35,7 +35,7 @@
 .icon {
   color: var(--color-primary);
   display: flex;
-  justify-content: end;
+  justify-content: right;
 }
 @media screen and (max-width: 600px) {
   section {

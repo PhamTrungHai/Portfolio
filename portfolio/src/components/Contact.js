@@ -42,7 +42,6 @@ function Contact() {
                 placeholder="What's your name?"
                 required
               />
-              <label>What's your name?</label>
             </div>
 
             <input
