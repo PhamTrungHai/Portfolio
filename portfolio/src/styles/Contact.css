@@ -8,7 +8,7 @@
 .contact-box {
   background: var(--color-bg-variant);
   border-radius: 0.8rem;
-  width: 10rem;
+  width: 15rem;
   height: 10rem;
   text-align: center;
 }
@@ -18,7 +18,63 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+.contact-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 20vw 35vw;
+  grid-gap: 5vw;
+}
 .contact-box > h3,
 h5 {
   margin-top: 0.4rem;
+}
+.mailing-form form {
+  display: grid;
+}
+.input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+input {
+  background: transparent;
+  height: 13vh;
+  border: 0.1rem solid;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  min-width: 125px;
+  padding: 0.5rem;
+  transition: all 0.5s ease-out;
+}
+.message {
+  min-height: 30vh;
+  text-align: left;
+}
+input:optional {
+  border-color: gray;
+}
+input:required:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+}
+input:required:focus:valid {
+  background: url('https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg')
+    no-repeat 95% 50% lightgreen;
+  background-size: 25px;
+}
+input:focus:invalid {
+  background: url('https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg')
+    no-repeat 95% 50% lightsalmon;
+  background-size: 25px;
+}
+.btn-send {
+  margin: 0.5rem;
 }

@@ -3,6 +3,7 @@ import '../styles/Contact.css';
 import { FaAward } from 'react-icons/fa';
 import { FaUserFriends } from 'react-icons/fa';
 import { ImFolderOpen } from 'react-icons/im';
+import Button from 'react-bootstrap/Button';
 
 function Contact() {
   const icons = [
@@ -32,7 +33,34 @@ function Contact() {
             );
           })}
         </div>
-        <div className="mail"></div>
+        <div className="mailing-form">
+          <form>
+            <div className="input-container">
+              <input
+                className="input"
+                type="text"
+                placeholder="What's your name?"
+                required
+              />
+              <label>What's your name?</label>
+            </div>
+
+            <input
+              className="input"
+              type="email"
+              placeholder="What's your email?"
+              required
+            />
+            <input
+              className="input message"
+              type="text"
+              placeholder="What's your email?"
+            />
+            <div className="bg-light border btn-send">
+              <Button variant="primary">Send Message</Button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );
