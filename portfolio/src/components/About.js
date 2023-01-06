@@ -59,7 +59,9 @@ function About() {
                 </h5>
               </div>
               <div className="bg-light border btn-talk">
-                <Button variant="primary">Let's Talk</Button>
+                <Button variant="primary" href="#contact">
+                  Let's Talk
+                </Button>
               </div>
             </Stack>
           </Col>

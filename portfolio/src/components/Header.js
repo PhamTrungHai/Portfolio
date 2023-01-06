@@ -10,9 +10,12 @@ import { AiFillFacebook } from 'react-icons/ai';
 
 function Header() {
   const socialMeds = [
-    { icon: <AiFillLinkedin />, url: 'abc.com' },
-    { icon: <AiFillGithub />, url: 'a12.com' },
-    { icon: <AiFillFacebook />, url: 'abc31.com' },
+    {
+      icon: <AiFillLinkedin />,
+      url: 'https://www.linkedin.com/in/h%E1%BA%A3i-ph%E1%BA%A1m-6a2319233/',
+    },
+    { icon: <AiFillGithub />, url: 'https://github.com/PhamTrungHai/' },
+    { icon: <AiFillFacebook />, url: 'https://www.facebook.com/qhai62' },
   ];
   return (
     <section id="header">
@@ -24,7 +27,7 @@ function Header() {
           <div className="container social-med">
             {socialMeds.map((socialMed) => {
               return (
-                <a key={socialMed.url} href={socialMed.url}>
+                <a key={socialMed.url} href={socialMed.url} target="_blank">
                   {socialMed.icon}
                 </a>
               );
@@ -32,7 +35,9 @@ function Header() {
           </div>
           <div className="cta">
             <Button variant="primary">Download CV</Button>
-            <Button variant="secondary">Let's Talk</Button>
+            <Button variant="secondary" href="#contact">
+              Let's Talk
+            </Button>
           </div>
           <div className="container pic-container">
             <div className="me">

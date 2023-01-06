@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import '../styles/Contact.css';
-import { FaAward } from 'react-icons/fa';
-import { FaUserFriends } from 'react-icons/fa';
-import { ImFolderOpen } from 'react-icons/im';
+import { FiMessageCircle } from 'react-icons/fi';
+import { MdOutlineEmail } from 'react-icons/md';
+import { RiMessengerLine } from 'react-icons/ri';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
 
@@ -32,19 +32,19 @@ function Contact() {
   };
   const icons = [
     {
-      icon: <FaAward />,
-      platform: 'Experience',
+      icon: <MdOutlineEmail />,
+      platform: 'Gmail',
       name: 'haiphamtrung62@gmail.com',
       link: 'mailto:haiphamtrung62@gmail.com',
     },
     {
-      icon: <FaUserFriends />,
-      platform: 'Clients',
+      icon: <RiMessengerLine />,
+      platform: 'Messenger',
       name: 'Phạm Trung Hải',
       link: 'https://m.me/qhai62',
     },
     {
-      icon: <ImFolderOpen />,
+      icon: <FiMessageCircle />,
       platform: 'Zalo',
       name: '0903349317',
       link: 'https://zalo.me/84903349317',
@@ -63,7 +63,9 @@ function Contact() {
                   {icon.icon}
                   <h3>{icon.platform}</h3>
                   <h5>{icon.name}</h5>
-                  <a href={icon.link}>Send a message</a>
+                  <a href={icon.link} target="_blank">
+                    Send a message
+                  </a>
                 </article>
               </div>
             );
@@ -74,7 +76,7 @@ function Contact() {
             <div className="input-container">
               <input
                 className="input"
-                type="name"
+                type="text"
                 name="name"
                 placeholder="What's your name?"
                 required
@@ -90,7 +92,7 @@ function Contact() {
             />
             <input
               className="input message"
-              type="name"
+              type="text"
               name="message"
               placeholder="What's your email?"
             />

@@ -11,6 +11,11 @@
   width: 15rem;
   height: 10rem;
   text-align: center;
+  border: 1px solid var(--color-bg-variant);
+}
+.contact-box:hover {
+  background: transparent;
+  transition: var(--transition);
 }
 .contact-med svg {
   margin-top: 2rem;
@@ -21,24 +26,17 @@
 .contact-container {
   justify-content: center;
   display: grid;
-  grid-template-columns: 20vw 35vw;
-  grid-gap: 5vw;
+  grid-template-columns: 30% 58%;
+  grid-gap: 12%;
 }
 .contact-box > h3,
 h5 {
   margin-top: 0.4rem;
 }
 .mailing-form form {
-  display: grid;
-}
-.input-container label {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 input {
@@ -49,8 +47,9 @@ input {
   border-radius: 0.75rem;
   font-size: 1rem;
   margin: 0.5rem;
-  min-width: 125px;
+  width: 100%;
   padding: 0.5rem;
+  resize: none;
   transition: all 0.5s ease-out;
 }
 .message {
@@ -78,4 +77,14 @@ input:focus:invalid {
 }
 .btn-send {
   margin: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    width: var(--container-width-sm);
+    gap: 0.5rem;
+  }
+  .mailing-form form {
+    gap: 0.5rem;
+  }
 }

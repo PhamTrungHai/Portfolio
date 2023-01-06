@@ -36,12 +36,14 @@ function Portfolio() {
                 <h4>{project.title}</h4>
               </div>
               <div className="port-link">
-                <Button
-                  variant="secondary secondary-trans"
-                  className="ma-right "
-                >
-                  Github
-                </Button>
+                <a href="https://github.com/PhamTrungHai/" target="_blank">
+                  <Button
+                    variant="secondary secondary-trans"
+                    className="ma-right "
+                  >
+                    Github
+                  </Button>
+                </a>
                 <a href={project.url} target={'_blank'} rel="noreferrer">
                   <Button variant="primary">Live Demo</Button>
                 </a>
