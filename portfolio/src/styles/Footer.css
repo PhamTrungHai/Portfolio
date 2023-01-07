@@ -45,3 +45,15 @@ footer a {
   margin-bottom: 4rem;
   color: var(--color-bg);
 }
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+  footer {
+    margin-top: 25rem;
+  }
+}

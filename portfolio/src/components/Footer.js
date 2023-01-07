@@ -1,10 +1,13 @@
 import React from 'react';
 import '../styles/Footer.css';
+import { FiMessageCircle } from 'react-icons/fi';
+import { BsFacebook } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 
 function Footer() {
   return (
     <footer>
-      <a href="#" className="foot__logo">
+      <a href="#" className="footer__logo">
         Hải Phạm
       </a>
       <ul className="permalinks">
@@ -32,13 +35,13 @@ function Footer() {
       </ul>
       <div className="footer__socials">
         <a href="https://facebook.com" target="_blank">
-          Facebook
+          <BsFacebook />
+        </a>
+        <a href="https://www.instagram.com/phamtrunghai256/" target="_blank">
+          <BsInstagram />
         </a>
         <a href="https://facebook.com" target="_blank">
-          Instagram
-        </a>
-        <a href="https://facebook.com" target="_blank">
-          Zalo
+          <FiMessageCircle />
         </a>
       </div>
       <div className="footer__copyright">
