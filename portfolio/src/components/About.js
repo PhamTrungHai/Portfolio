@@ -75,10 +75,8 @@ function About() {
                         <li>
                           - Experienced UI developer HTML5, CSS, Javascript,...
                         </li>
-                        <li>
-                          - Know how to use Figma, AdobeXD,... - Have
-                          experiences in using Git, GitHub,...
-                        </li>
+                        <li>- Know how to use Figma, AdobeXD,...</li>
+                        <li>- Have experiences in using Git, GitHub,...</li>
                       </ul>{' '}
                       My portfolio :{' '}
                       <a href="https://haifam.me/">https://haifam.me/</a>
