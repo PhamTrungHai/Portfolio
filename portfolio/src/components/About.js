@@ -47,16 +47,44 @@ function About() {
                 })}
               </div>
               <div className="bg-light border self-intro">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </h5>
+                <ul>
+                  <li>
+                    <h5>
+                      <strong>Experience:</strong>
+                      <ul>
+                        <li>- Junior at HUFLIT Universities.</li>
+                        <li>
+                          - Have 1 year worth of experience in learning, using
+                          MERN stack.
+                        </li>
+                        <li>
+                          - Eager to learn more in network management and
+                          cybersecurity.
+                        </li>
+                        <li>
+                          - Know how to read documentation and search for
+                          answers when reach a dead end.
+                        </li>
+                      </ul>{' '}
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      <strong>Skills:</strong>
+                      <ul>
+                        <li>
+                          - Experienced UI developer HTML5, CSS, Javascript,...
+                        </li>
+                        <li>
+                          - Know how to use Figma, AdobeXD,... - Have
+                          experiences in using Git, GitHub,...
+                        </li>
+                      </ul>{' '}
+                      My portfolio :{' '}
+                      <a href="https://haifam.me/">https://haifam.me/</a>
+                    </h5>
+                  </li>
+                </ul>
               </div>
               <div className="bg-light border btn-talk">
                 <Button variant="primary" href="#contact">

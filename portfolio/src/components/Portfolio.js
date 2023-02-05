@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Portfolio.css';
 import Port1 from '../assets/portfo1.png';
+import Port2 from '../assets/portfo2.jpeg';
+import Port3 from '../assets/portfo3.jpeg';
 import Button from 'react-bootstrap/Button';
 
 function Portfolio() {
@@ -11,14 +13,14 @@ function Portfolio() {
       url: 'https://www.behance.net/gallery/159458823/TKGDWEB_BANDIENTHOAI/modules/899730933',
     },
     {
-      img: Port1,
-      title: 'Ecommerce website UX/UI Figma 1',
-      url: 'https://www.behance.net/gallery/159458823/TKGDWEB_BANDIENTHOAI/modules/899730933',
+      img: Port2,
+      title: 'Ecommercce Laptop Store',
+      url: 'https://shoplap.onrender.com/',
     },
     {
-      img: Port1,
-      title: 'Ecommerce website UX/UI Figma 2',
-      url: 'https://www.behance.net/gallery/159458823/TKGDWEB_BANDIENTHOAI/modules/899730933',
+      img: Port3,
+      title: 'Ecommerce Beershop',
+      url: 'https://lobster-app-sqnty.ondigitalocean.app/',
     },
   ];
   return (

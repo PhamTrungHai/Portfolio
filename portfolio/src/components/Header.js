@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/Header.css';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
-import me from '../assets/me.png';
+import me1 from '../assets/me1.png';
+import CV from '../assets/CV.pdf';
 import Col from 'react-bootstrap/Col';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
@@ -34,14 +35,16 @@ function Header() {
             })}
           </div>
           <div className="cta">
-            <Button variant="primary">Download CV</Button>
+            <Button variant="primary" href={CV} download>
+              Download CV
+            </Button>
             <Button variant="secondary" href="#contact">
               Let's Talk
             </Button>
           </div>
           <div className="container pic-container">
             <div className="me">
-              <img src={me} alt="Me" />
+              <img src={me1} alt="Me" />
             </div>
           </div>
 
